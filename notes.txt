@@ -14,3 +14,29 @@ Intro to Dart (Prerequisite before using Flutter)
 Starting of Dart
 ----------------
 void main() -> entry point to the dart app
+Dart Follows BODMAS
+
+// We have to use semicolon to end each statement
+
+Variables
+----------
+We have to define the type of the value here (One way)
+
+int a = 10; // Integer
+double b = 3.4; // Double
+String c = "Hello World"; // String
+bool d = true; // Boolean
+dynamic e = anyValue; // Dynamic
+
+Var, Const and Final
+---------------------
+we can use var/final/const to define variables (Preferred way)
+with var we can reassign a value to the variable but with final/const we cannot
+
+Mutability and Immutability => Mutable means the value can be changed after it is assigned and Immutable means once the value is assigned it cannot be changed.
+
+final and const
+----------------
+Suppose we assign DateTime.now() which gives current date and time okay and set it to final and const with variable names respectively so we can see while compile time an error on const whole no error on final.
+
+DateTime.now() gives value at runtime so its value cannot be known until the program is executed. so final is a runtime constant while const is a compiletime constant so runtime value doesn't goes well with compiletime constant.
