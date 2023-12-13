@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 void main() {
   // print("Hello, Remo");
   // print("3"*5); // prints 3 (String) 5 times
@@ -47,7 +49,7 @@ void main() {
   //! var/final/const
   // var/final/const variableName = value;
 
-  // Dart knows the type of variable defined
+  //! Dart knows the type of variable defined
   // var someValue1 = "10";
   // final someValue2 = "10";
   // const someValue3 = "10";
@@ -64,12 +66,25 @@ void main() {
   // print(someValue2);
   // print(someValue3);
 
-  final currentTimeinFinal = DateTime.now();
+  //! Difference between final and const
+  // final currentTimeinFinal = DateTime.now();
   // const currentTimeinConst = DateTime.now(); // Gives error as const is compiletime constant
-  const someValue = 100;
+  // const someValue = 100;
+  // print(currentTimeinFinal);
+  // print(someValue);
 
-  print(currentTimeinFinal);
-  print(someValue);
+  //! Nullable/Optional Variables
+  //? It can be value of String/int/bool/double and null
+  String? val;
+  print(val);
 
+  val = "Hello, Remo";
+  print(val);
+
+  val = null;
+  print(val);
+
+  //! Dart has the support for nullable variables and this is called Sound null safety
   
+
 }

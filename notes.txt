@@ -20,7 +20,7 @@ Dart Follows BODMAS
 
 Variables
 ----------
-We have to define the type of the value here (One way)
+We have to define the type of the value here (one way)
 
 int a = 10; // Integer
 double b = 3.4; // Double
@@ -37,6 +37,16 @@ Mutability and Immutability => Mutable means the value can be changed after it i
 
 final and const
 ----------------
-Suppose we assign DateTime.now() which gives current date and time okay and set it to final and const with variable names respectively so we can see while compile time an error on const whole no error on final.
+Suppose we assign DateTime.now() which gives current date and time okay and set it to final and const with variable names respectively so we can see while compile time an error on const and no error on final.
 
-DateTime.now() gives value at runtime so its value cannot be known until the program is executed. so final is a runtime constant while const is a compiletime constant so runtime value doesn't goes well with compiletime constant.
+DateTime.now() gives variable value so its value cannot be known until the program is executed and we can easily deal it with final as it handles runtime constant while const handles compiletime constant.
+
+Compile time -> Code is converted to an executable format
+Run time -> The executable format starts executing or starts running
+
+Nullable/Optional Variables
+----------------------------
+We can assign the variables with any datatype and also null as well using ?
+
+Ex :  String? val -> This will give null and won't throw error
+
