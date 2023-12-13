@@ -73,16 +73,88 @@ void main() {
 
   //! Nullable/Optional Variables
   //? It can be value of String/int/bool/double and null
-  String? val;
-  print(val);
+  // String? val;
+  // print(val);
 
-  val = "Hello, Remo";
-  print(val);
+  // val = "Hello, Remo";
+  // print(val);
 
-  val = null;
-  print(val);
+  // val = null;
+  // print(val);
 
   //! Dart has the support for nullable variables and this is called Sound null safety
-  
 
+  // print(val.length); // This normally would give error as the value can be null so it can't have length
+  // print(val!.length); // This will give no compile time error but it will give runtime error
+  // print(val?.length);
+  // print(val?.length ?? "length not specified");
+
+  //! Exercise :
+  // String destinationZone = "PQR";
+  // double weightInKgs = 6;
+
+  // if (destinationZone == "XYZ") {
+  //   print('Shipping Cost : ${weightInKgs * 5}');
+  // } else if (destinationZone == "ABC") {
+  //   print('Shipping Cost : ${weightInKgs * 7}');
+  // } else if (destinationZone == "PQR") {
+  //   print('Shipping Cost : ${weightInKgs * 10}');
+  // } else {
+  //   print('Invalid Destination Zone !!!');
+  // }
+
+  // switch (destinationZone) {
+  //   case "XYZ":
+  //     print('Shipping Cost : ${weightInKgs * 5}');
+  //   case "ABC":
+  //     print('Shipping Cost : ${weightInKgs * 7}');
+  //   case "PQR":
+  //     print('Shipping Cost : ${weightInKgs * 10}');
+  //   default:
+  //     print('Invalid Destination Zone !!!');
+  // }
+
+  // if (destinationZone == "XYZ") {
+  //   print('Shipping Cost : ${weightInKgs * 5}');
+  // } else if (destinationZone == "ABC") {
+  //   print('Shipping Cost : ${weightInKgs * 7}');
+  // } else if (destinationZone == "PQR") {
+  //   print('Shipping Cost : ${weightInKgs * 10}');
+  // } else {
+  //   print('Invalid Destination Zone !!!');
+  // }
+
+  // String str = "Hello";
+  // for(int i =0; i<str.length; i++){
+  //   print("${str[i]}");
+  // }
+
+  //! Functions
+  // String str = greeting();
+  // print(str);
+
+  // final val = greeting();
+  // print('${val.$1} and I am ${val.$2} years old');
+
+  //! Destructuring
+  //  final(greet, age) = greeting();
+  //  print('${greet} and I am ${age} years old');
+
+  String name = "Remo";
+  int age = 23;
+  greeting(name,age);
+
+}
+
+// String greeting(){
+//   return "Hello Remo!";
+// }
+
+//! Records
+// (String, int) greeting() {
+//   return ("Hello I am Remo", 23);
+// }
+
+void greeting(String name, int age){
+  print("Hello I am $name and I am $age years old !!");
 }

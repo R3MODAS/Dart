@@ -1,11 +1,11 @@
 Intro to Dart (Prerequisite before using Flutter)
 ----------------------------------------------------
-- Dart is an Open source programming language developed by google.
+- Dart is an open source programming language developed by google.
 - It has similarities with Javascript/Java
 - It's used for building web, mobile and desktop apps
 - It can also help to create UI, Servers and more
 - 2 Compilation Processes : JIT (just in time) and AOT (Ahead of time)
-- The main difference between the two is that AOT compiles code at build time while JIT does it during runtime(coding the program)
+- The main difference between the two is that When coding the program (JIT compiler is used) and when deploying the app (AOT compiler is used)
 - To write Dart we require SDK (Software Development Kit)
 - Software Development Kit is nothing but tools that are required to code and run the dart in our machine and deploy it securily as well
 
@@ -50,3 +50,6 @@ We can assign the variables with any datatype and also null as well using ?
 
 Ex :  String? val -> This will give null and won't throw error
 
+-> Null assertion operator (!) // value is not null 
+-> Null aware operator (?) // value can be null so don't throw error
+-> Null coalescing operator (??) // if value is null then do something else
