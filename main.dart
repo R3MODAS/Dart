@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // print("Hello, Remo");
   // print("3"*5); // prints 3 (String) 5 times
@@ -22,8 +24,9 @@ void main() {
   //! String interpolation
   // String greeting = "Hello";
   // String firstName = "Remo";
-
+  
   // print(greeting);
+  // print("$greeting $firstName!");
 
   // greeting = "Hello $firstName";
   // print(greeting);
@@ -83,7 +86,6 @@ void main() {
   // print(val);
 
   //! Dart has the support for nullable variables and this is called Sound null safety
-
   // print(val.length); // This normally would give error as the value can be null so it can't have length
   // print(val!.length); // This will give no compile time error but it will give runtime error
   // print(val?.length);
@@ -114,16 +116,6 @@ void main() {
   //     print('Invalid Destination Zone !!!');
   // }
 
-  // if (destinationZone == "XYZ") {
-  //   print('Shipping Cost : ${weightInKgs * 5}');
-  // } else if (destinationZone == "ABC") {
-  //   print('Shipping Cost : ${weightInKgs * 7}');
-  // } else if (destinationZone == "PQR") {
-  //   print('Shipping Cost : ${weightInKgs * 10}');
-  // } else {
-  //   print('Invalid Destination Zone !!!');
-  // }
-
   // String str = "Hello";
   // for(int i =0; i<str.length; i++){
   //   print("${str[i]}");
@@ -140,9 +132,29 @@ void main() {
   //  final(greet, age) = greeting();
   //  print('${greet} and I am ${age} years old');
 
-  String name = "Remo";
-  int age = 23;
-  greeting(name,age);
+  // String name = "Remo";
+  // int age = 23;
+  // greeting(name,age);
+
+  // printName( age: age, name: name);
+  
+  // final stuff = printStuff();
+  // stuff();
+  //! Anonymous function 
+  // (){
+  //   print('Yooooo');
+  // }();
+
+  //! Accessing class
+  // print(Person().name);
+  // Person().introduce();
+
+  // Person person = Person(); // having the type of class Person 
+  final person = Person();
+  print(person.name);
+  person.name = "Sharadindu Das";
+  print(person.name);
+  print(Person().name);
 
 }
 
@@ -158,3 +170,28 @@ void main() {
 void greeting(String name, int age){
   print("Hello I am $name and I am $age years old !!");
 }
+
+//! named arguments
+void printName({required String name, int? age}){
+  print('Hello I am $name, $age years old');
+}
+
+//! function returning function
+Function printStuff(){
+  return (){
+    print("Yooooo");
+  };
+} 
+
+class Person{
+  // variables
+  String name = "Remo";
+  int age = 23;
+
+  // functions
+  void introduce(){
+    print('Hello my name is $name and I am $age years old');
+  }
+
+}
+
