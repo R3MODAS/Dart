@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main() {
   // print("Hello, Remo");
   // print("3"*5); // prints 3 (String) 5 times

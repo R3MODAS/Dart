@@ -54,7 +54,7 @@ Ex :  String? val -> This will give null and won't throw error
 -> Null aware operator (?) // value can be null so don't throw error
 -> Null coalescing operator (??) // if value is null then do something else
 
-class
+Class
 -----
 We have to use PascalCase convention here while defining name for class
 
