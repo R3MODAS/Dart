@@ -50,9 +50,9 @@ We can assign the variables with any datatype and also null as well using ?
 
 Ex :  String? val -> This will give null and won't throw error
 
--> Null assertion operator (!) // value is not null 
--> Null aware operator (?) // value can be null so don't throw error
--> Null coalescing operator (??) // if value is null then do something else
+- Null assertion operator (!) // value is not null 
+- Null aware operator (?) // value can be null so don't throw error
+- Null coalescing operator (??) // if value is null then do something else
 
 Class
 -----
